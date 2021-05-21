@@ -1,0 +1,11 @@
+C:\src\Apps\CommandApp\CommandApp\bin\Debug\netcoreapp3.1\CommandApp.exe
+C:\src\Apps\CommandApp\CommandApp\bin\Debug\netcoreapp3.1\CommandApp.deps.json
+C:\src\Apps\CommandApp\CommandApp\bin\Debug\netcoreapp3.1\CommandApp.runtimeconfig.json
+C:\src\Apps\CommandApp\CommandApp\bin\Debug\netcoreapp3.1\CommandApp.runtimeconfig.dev.json
+C:\src\Apps\CommandApp\CommandApp\bin\Debug\netcoreapp3.1\CommandApp.dll
+C:\src\Apps\CommandApp\CommandApp\bin\Debug\netcoreapp3.1\CommandApp.pdb
+C:\src\Apps\CommandApp\CommandApp\obj\Debug\netcoreapp3.1\CommandApp.csprojAssemblyReference.cache
+C:\src\Apps\CommandApp\CommandApp\obj\Debug\netcoreapp3.1\CommandApp.AssemblyInfoInputs.cache
+C:\src\Apps\CommandApp\CommandApp\obj\Debug\netcoreapp3.1\CommandApp.AssemblyInfo.cs
+C:\src\Apps\CommandApp\CommandApp\obj\Debug\netcoreapp3.1\CommandApp.dll
+C:\src\Apps\CommandApp\CommandApp\obj\Debug\netcoreapp3.1\CommandApp.pdb
