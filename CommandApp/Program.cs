@@ -91,10 +91,15 @@ namespace CommandApp
             
             Func<List<BigInteger>, BigInteger> add = new Func<List<BigInteger> , BigInteger>(MethodCollections.Add);
             Func<List<BigInteger>, BigInteger> mult = new Func<List<BigInteger>, BigInteger>(MethodCollections.Mult);
+            Dictionary<int, BigInteger> stepValue = new Dictionary<int, BigInteger>();
 
             Func<List<Command>, Command, BigInteger> GetExpression = null;
             GetExpression = (ps, p) =>
             {
+                if(stepValue.ContainsKey(p.Step))
+                {
+                    return stepValue[p.Step];
+                }
 
                 if (p.CommandType == CommandType.Value)
                 {
@@ -105,6 +110,7 @@ namespace CommandApp
                 {
                     //path.Append($" {p.CommandType.ToString()}");
                     List<BigInteger> subResult = new List<BigInteger>();
+                    
                     foreach (var item in p.Inputs)
                     {
                         //path.Append($" {item}");
@@ -114,11 +120,15 @@ namespace CommandApp
 
                     if(p.CommandType == CommandType.Add)
                     {
-                        return add(subResult);
+                        var addResult = add(subResult);
+                        stepValue.Add(p.Step, addResult);
+                        return addResult;
                     }
                     else
                     {
-                        return mult(subResult);
+                        var multResult = mult(subResult);
+                        stepValue.Add(p.Step, multResult);
+                        return multResult;
                     }
 
                 }
